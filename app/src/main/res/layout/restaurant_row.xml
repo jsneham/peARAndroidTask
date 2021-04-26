@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/dp05"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/dp03"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/ivVegNon"
+                android:layout_margin="@dimen/dp03"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:src="@drawable/veg"></ImageView>
+            <TextView
+                android:id="@+id/ivBestSeller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/ic_baseline_star_24"
+                android:text="@string/seller"
+                android:textColor="@color/yellow"
+                android:textSize="14sp">
+
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/title"
+
+            />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:background="@drawable/strike_through"
+                android:id="@+id/tvDiscount"
+               style="@style/strikeText" />
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/priceText" />
+            <TextView
+                android:id="@+id/tvOffer"
+                style="@style/OffText" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvDes"
+            style="@style/SmallOfferText"
+
+            />
+
+        <Button
+            android:textColor="@color/white"
+            android:text="@string/view3d"
+            android:background="@drawable/btn_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/dp03"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                app:shapeAppearanceOverlay="@style/roundedCorners"
+                android:id="@+id/ivRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/pavbhaji"></com.google.android.material.imageview.ShapeableImageView>
+        </RelativeLayout>
+
+        <Button
+            android:background="@drawable/add_btnshape"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:textColor="@color/green_light"
+            android:layout_below="@id/ivRestaurant"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="-25dp"
+            android:elevation="15dp"
+            android:text="@string/add" />
+
+        <Spinner
+
+           android:spinnerMode="dropdown"
+            android:id="@+id/spCoustmize"
+            android:prompt="@string/customize"
+            android:backgroundTint="@color/green_light"
+            android:layout_margin="@dimen/dp05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+
+
+    </LinearLayout>
+
+</LinearLayout>

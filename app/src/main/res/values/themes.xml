@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PeAR" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <item name="titleTextColor">@color/black</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+
+        <item name="titleTextColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="actionMenuTextColor">@color/black</item>
+    </style>
+
+    <style name="OfferText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/offer_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/offer_text_margin</item>
+    </style>
+
+
+    <style name="SmallOfferText">
+
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/small_offer_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/offer_text_margin</item>
+    </style>
+
+    <style name="RVstyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/dp10</item>
+    </style>
+
+    <style name="OfferDesc">
+        <item name="android:maxLength">25</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/offer_desc</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/offer_text_margin</item>
+    </style>
+
+
+    <style name="title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/offer_text_margin</item>
+    </style>
+    <style name="strikeText">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/small_offer_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/dp03</item>
+    </style>
+
+    <style name="priceText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/small_offer_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/dp03</item>
+    </style>
+
+    <style name="OffText">
+        <item name="android:textColor">@color/coupon</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/offer</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/dp03</item>
+    </style>
+
+    <style name="roundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp20</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:textColor">#00FF00</item>
+       <item name="background">@color/coupon</item>
+    </style>
+</resources>
